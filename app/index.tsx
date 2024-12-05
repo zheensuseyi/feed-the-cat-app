@@ -12,14 +12,11 @@ const App = () => {
   const [counter, setCounter] = useState(0);
   const [maxPresses, setMaxPresses] = useState(false); // State to track if the button should disappear
 
-  // Function to change the background image and button text
-  const changeBackgroundImage = () => {
-    setBackgroundImage(require('@/assets/images/greencat.png')); // Change image to greencat.png
-    setButtonText('THANK YOU!🔥'); // Change button text after it's pressed
-  };
+  // Function for button presses, depending on how much the button gets pressed, different things will happen!
   const increment = () => {
     if(counter > 0.1) {
-      changeBackgroundImage()
+      setBackgroundImage(require('@/assets/images/greencat.png')); // Change image to greencat.png
+      setButtonText('THANK YOU!🔥'); // Change button text after it's pressed
     }
     if(counter > 0.2) {
       setButtonText('Ok im full right about meow...😸 '); // Change button text after it's pressed
@@ -33,6 +30,7 @@ const App = () => {
       setButtonText(''); // Change button text after it's pressed
       setMaxPresses(true); // Update state to hide the button
     }
+    // Increment counter
     setCounter(counter + 0.0169);
   };
 
