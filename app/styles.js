@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    flex: 1, 
+    flex: 1,
     flexDirection: 'column',
     padding: 50,
   },
@@ -15,11 +15,9 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    color: 'red',
-    fontSize: 20,
-    fontWeight: 'bold',
+    color: 'green',
+    fontSize: 15,
     textAlign: 'center',
-    marginBottom: 120,
   },
   link: {
     color: 'black',
@@ -41,6 +39,11 @@ export default StyleSheet.create({
     shadowOffset: { width: 0, height: 2 }, // Shadow offset (iOS)
     shadowOpacity: 0.8, // Shadow opacity (iOS)
     shadowRadius: 2, // Shadow radius (iOS)
+  },
+  button2: {
+    backgroundColor: 'pink', // Green background color
+    borderRadius: 1, // Rounded corners
+    marginTop: 1, // Space between the button and text input
   },
   buttonText: {
     color: 'white', // White text color
